@@ -1,0 +1,17 @@
+Creating indexes
+
+1. db.product.ensureIndex({supc:1})
+2. db.product.ensureIndex({pogId:1})
+3. db.product.ensureIndex({category:1})
+4. db.product.ensureIndex({brand:1})
+
+
+In mongo shell
+
+> db.product.ensureIndex({pogId:1})
+{
+	"createdCollectionAutomatically" : false,
+	"numIndexesBefore" : 2,
+	"numIndexesAfter" : 3,
+	"ok" : 1
+}
