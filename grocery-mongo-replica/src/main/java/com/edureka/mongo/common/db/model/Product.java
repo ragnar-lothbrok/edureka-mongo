@@ -22,10 +22,12 @@ public class Product extends AuditEntity implements Serializable {
 	private String sellerCode;
 	private String stock;
 
+	private Long pogId;
+
 	public Product(Long pogId, String supc, String brand, String description, String size, String category,
 			String subCategory, float price, Long quantity, String country, String sellerCode, String stock) {
 		super();
-		this.setId(pogId.toString());
+		this.pogId = pogId;
 		this.supc = supc;
 		this.brand = brand;
 		this.description = description;
@@ -97,6 +99,14 @@ public class Product extends AuditEntity implements Serializable {
 
 	public void setPrice(float price) {
 		this.price = price;
+	}
+
+	public Long getPogId() {
+		return pogId;
+	}
+
+	public void setPogId(Long pogId) {
+		this.pogId = pogId;
 	}
 
 	public Long getQuantity() {
