@@ -1,0 +1,3 @@
+mvn clean install -DskipTests
+
+http://localhost:9898/swagger-ui.html
